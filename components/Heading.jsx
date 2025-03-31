@@ -1,7 +1,7 @@
 import logo from "../src/assets/img/LogoSerendipiaWeddings.png"
 import {Instagram, TikTok, Whatsapp} from "../src/svg"
 
-export const Heading = () => {
+export const Heading = ({headingButton}) => {
   return (
     <header>
      
@@ -16,7 +16,7 @@ export const Heading = () => {
             <p className="header__texto">Film & Photo</p>
           
             <div className="header__button">
-              <a href="#">Find out more</a> 
+              <a href="#">{headingButton}</a> 
             </div>
           </div>
         </div>
