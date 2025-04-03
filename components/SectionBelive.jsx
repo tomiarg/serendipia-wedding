@@ -1,6 +1,9 @@
 import anillos from "../src/assets/img/Anillos.png"
 
-export const SectionBelive = () => {
+export const SectionBelive = ({beliveHead, beliveLi}) => {
+
+  const {wedding, videos, shorts, photos, resolution} = beliveLi
+
   return (
     <>
     <div className="sectionBelive">
@@ -8,12 +11,12 @@ export const SectionBelive = () => {
             <img src={anillos} alt="" />
         </div>
         <div className="sectionBelive__texts">
-            <h3 className="sectionBelive__heading">WE BELIEVE IN THE MAGIC OF THE SPONTANEOUS </h3>
-            <div className="sectionBelive__text"><p>Wedding Film</p></div>
-            <div className="sectionBelive__text"><p>Videos Highlights</p></div>
-            <div className="sectionBelive__text"><p>Social Media Shorts</p></div> 
-            <div className="sectionBelive__text"><p>Photographs</p></div>
-            <div className="sectionBelive__text"><p>High-resolution deliveries  </p></div>
+            <h3 className="sectionBelive__heading">{beliveHead} </h3>
+            <div className="sectionBelive__text"><p>{wedding}</p></div>
+            <div className="sectionBelive__text"><p>{videos}</p></div>
+            <div className="sectionBelive__text"><p>{shorts}</p></div> 
+            <div className="sectionBelive__text"><p>{photos}</p></div>
+            <div className="sectionBelive__text"><p>{resolution}</p></div>
         </div>
     </div>
     </>
