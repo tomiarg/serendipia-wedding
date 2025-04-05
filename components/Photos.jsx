@@ -1,4 +1,12 @@
 import estrellas from "../src/assets/img/Estrellitas.jpeg"
+import gemelosAnillo from "../src/assets/img/gemelosAnillo.jpg"
+import miradaCerca from "../src/assets/img/miradaCerca.jpg"
+import noviaEspalda from "../src/assets/img/noviaEspalda.jpg"
+import padreHija from "../src/assets/img/Contentos.jpeg"
+import paisajeHotel from "../src/assets/img/paisajeHotel.jpg"
+import paraguas from "../src/assets/img/paraguas.jpg"
+import abajo from "../src/assets/img/abajo.jpg"
+
 export const Photos = () => {
   return (
     <section className="photos">
@@ -10,22 +18,25 @@ export const Photos = () => {
             <img src={estrellas} alt="" />
           </div>
           <div className="photos__grid--photo">
-            <img src={estrellas} alt="" />
+            <img src={gemelosAnillo} alt="" />
           </div>
           <div className="photos__grid--photo">
-            <img src={estrellas} alt="" />
+            <img src={noviaEspalda} alt="" />
           </div>
           <div className="photos__grid--photo">
-             <img src={estrellas} alt="" />
+             <img src={miradaCerca} alt="" />
           </div>
           <div className="photos__grid--photo">
-            <img src={estrellas} alt="" />
+            <img src={paisajeHotel} alt="" />
           </div>
           <div className="photos__grid--photo">
-          <img src={estrellas} alt="" />
+          <img src={paraguas} alt="" />
           </div>
           <div className="photos__grid--photo">
-          <img src={estrellas} alt="" />
+            <img src={padreHija} alt="" />
+          </div>
+          <div className="photos__grid--photo">
+            <img src={abajo} alt="" />
           </div>
              
         </div>     

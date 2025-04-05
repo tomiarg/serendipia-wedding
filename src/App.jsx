@@ -1,6 +1,8 @@
 import { useState } from "react"
-import { Main, Heading, SectionBelive, Films, Photos } from "../components"
+import { Main,  SectionBelive, Films, Photos, Reviews } from "../components"
 import { base } from "./dataBase/base"
+import logo from "../src/assets/img/LogoSerendipiaWeddings.png"
+import {Instagram, TikTok, Whatsapp} from "../src/svg"
 
 function App() {
   const [spanish, setSpanish ] = useState(true)
@@ -30,12 +32,34 @@ function App() {
 
   return (
     <>
-      <button onClick={changeLenguage}>{lenguage}</button>
-      <Heading  headingButton={
+      <header>
+           
+              <div className="header">
+                <div className="overlay">
+                  <nav className="nav">
+                    <div>
+                      <button onClick={changeLenguage}>{lenguage}</button>
+                    </div>
+                    <div>
+                      <a href="#"><Instagram/></a>
+                      <a href="#"><TikTok/></a>
+                      <a href="#"><Whatsapp/></a>
+                     </div>                 
+                      
+                    </nav>
+                   <img className="header__img" src={logo}  alt="Serendipia Logo" />
+                  <p className="header__texto">Film & Photo</p>
+                
+                  <div className="header__button">
+                    <a href="#">{
        textos[0] && textos[0].headingButton !== 'undefined' 
       ? textos[0].headingButton 
       : "Find out more"
-      }  />
+      } </a> 
+                  </div>
+                </div>
+              </div>
+          </header>      
       <Main mainHead={
        textos[0] && textos[0].mainHeading !== 'undefined' 
       ? textos[0].mainHeading 
@@ -52,6 +76,7 @@ function App() {
       }/>
       <Films/>
       <Photos/>
+      <Reviews/>
     </>
   )
 }
