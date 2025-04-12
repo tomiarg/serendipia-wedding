@@ -38,12 +38,7 @@ img {
   max-width: 100%;
   display: block;
 }
-[class$="__contenedor"]{
-  max-width: 120rem;
-  margin: 0 auto;
-  width: 90%;
 
-}
 header{
   background-color: rgba(red, green, blue, alpha)
 }
@@ -71,11 +66,25 @@ header{
   justify-content: center;
   gap: 2rem;
   padding: 4rem 4rem 0 4rem;
+  flex-direction: column;
+  align-items: center;
 }
 @media (min-width:768px) {
   .nav{
+    flex-direction: row;
     justify-content: space-between;
   }
+}
+.btn-lenguage{
+  padding: 1rem;
+  border-radius: 25px;
+  background-color: var(--blanco);
+  border: none;
+  cursor: pointer;
+}
+.btn-lenguage:hover{
+  background-color: #f5f2eb;
+  border: 1px solid #9d9d9d;
 }
 .header__img{
   margin: 0 auto;
@@ -98,20 +107,28 @@ header{
   }
 }
 
-.header__button{
-  margin-top: 15rem;
+[class$="__button"]{
   padding: 1rem 3rem;
   text-decoration: none;
   display: flex;
   justify-content: center;
+
 }
-.header__button a{
+
+[class$="__button"] a{
   text-decoration: none;
   padding: 1rem 6rem;
   color: var(--blanco);
   border:solid 1px var(--blanco);
   border-radius: 25px;
+
 }
+
+
+.header__button{
+  margin-top: 15rem;  
+}
+
 .main{
   height: 200vh;
   background-image: url(../src/assets/img/Vacio.jpeg);
@@ -192,34 +209,54 @@ header{
 }
 
 .films{
-  padding: 10rem 5rem;
-  background-color: #f5f2eb;
-  display: flex;
-  gap: 2rem;
-}
-.films__heading--img{
-  padding-right: 6rem;
-}
-.films__mixs--img{
   width: 100%;
+  position: relative;
+  display: flex
+;
+  align-items: center;
+  justify-content: center;
+  height: 100vh
+}
+.films .overlay {
+  padding: 4rem;
+  background: rgb(245, 242, 235);
+  background: linear-gradient(270deg, rgba(245, 242, 235, 0.364), rgba(245, 242, 235, .1));
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+.films__links{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.video__button a{
+  min-width: 27.4rem;
+}
+
+video {
+   position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 .photos{
   padding: 4rem;
   background-color: #f5f2eb;
 }
-.photos__grid{
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 2rem;
-}
-.photos__grid--photo img{
-  object-fit: cover;
-  height: 100%;
-}
 
 @media (min-width:768px) {
   .photos__grid{
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
   }
   .photos__grid--photo:first-child{
     grid-column: 1/3;
@@ -244,15 +281,27 @@ header{
 }
 .photos__grid--photo img{
   border-radius: 25px;
-  height: 100%;
+  width: 100%;  
+  max-height: 100vh;
+  margin-bottom: 2rem
 }
+
+@media (min-width:768px) {
+  .photos__grid--photo img{
+    object-fit: cover;
+    min-height: 100%;
+    margin: 0;
+  }
+}
+
+
 
 .reviews{
   padding: 4rem;
   background-color: #f5f2eb;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
 
 }
 @media (min-width:768px) {
@@ -278,10 +327,18 @@ header{
   justify-content: space-between;
   padding: 3rem;
 }
+
 .reviews__text{
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 3rem;
   padding: 4rem;
+}
+@media(min-width:768px){
+  .reviews__text{
+    flex-direction: row;
+  }
 }
 .reviews__text--img{
   width: 10rem;
@@ -297,4 +354,66 @@ header{
 }
 .reviews__text--quote p{
   font-weight: bolder;
+}
+
+.contact{
+  height: 100vh;
+  background-image: url(../src/assets/img/Zapatos.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.contact h2{
+  margin: 0;
+}
+
+.contact__form{
+  grid-column: 1 / 6;
+  grid-row: 3 / 4;
+  padding: 1rem;
+  background-color: #f5f2eb;
+  text-align: center;
+  border-radius: 25px;
+}
+@media (min-width:768px) {
+  .contact__form{
+    grid-column: 2/5;
+    grid-row: 2/3;
+    padding: 2rem;
+  }
+}
+.contact__flex{
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width:768px) {
+  .contact__flex{
+    flex-direction: row;
+  }
+  
+}
+.contact__texts{
+  flex-basis: 50%;
+}
+.contact__text{
+  border-bottom:solid 1px var(--negro);
+  text-align: center;
+}
+@media (min-width:768px) {
+  .contact__text{
+    text-align: start;
+  }
+}
+.contact__text a{
+  text-decoration: none;
+  color: var(--negro);
+}
+.contact__button a{
+  color: var(--negro);
+  border:solid 1px var(--negro);
+}
+
+.contact__image{
+  width: 30rem;
+  margin: 0 auto;
 }

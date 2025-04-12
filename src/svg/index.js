@@ -1,3 +1,5 @@
 export * from "./Instagram"
 export * from "./TikTok"
 export * from "./Whatsapp"
+export * from "./Location"
+export * from "./Mail"

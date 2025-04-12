@@ -5,7 +5,7 @@ export const Reviews = () => {
   return (
     <div className="reviews">
         <div className="reviews__heading">
-            <h3>Reviews of our Clients</h3> 
+            <h3>Our Clients reviews</h3> 
             <img src={cupido} alt="cupido"  className="reviews__draw"/>
         </div>
         <div className="reviews__texts">

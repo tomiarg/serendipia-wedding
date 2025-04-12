@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Main,  SectionBelive, Films, Photos, Reviews } from "../components"
+import { Main,  SectionBelive, Films, Photos, Reviews, Contact } from "../components"
 import { base } from "./dataBase/base"
 import logo from "../src/assets/img/LogoSerendipiaWeddings.png"
 import {Instagram, TikTok, Whatsapp} from "../src/svg"
@@ -38,7 +38,7 @@ function App() {
                 <div className="overlay">
                   <nav className="nav">
                     <div>
-                      <button onClick={changeLenguage}>{lenguage}</button>
+                      <button onClick={changeLenguage} className="btn-lenguage">{lenguage}</button>
                     </div>
                     <div>
                       <a href="#"><Instagram/></a>
@@ -77,6 +77,7 @@ function App() {
       <Films/>
       <Photos/>
       <Reviews/>
+      <Contact/>
     </>
   )
 }
