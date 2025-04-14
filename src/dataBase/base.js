@@ -5,7 +5,7 @@ export const base =
             lenguaje: "english",
             headingButton: "Find out more",
             mainHeading: "Who we are?",
-            mainText: "At Serendipia, we’re all about capturing those once-in-a-lifetime moments that define love and the connection between two people. Our team is made up of photographers and filmmakers with years of experience, all dedicated to creating top-notch images and films that truly reflect the beauty and vibe of each wedding. Our mission is simple: to tell your love story through photography and film, creating memories that take you right back to the heart of your special day, so you can relive every feeling like it’s happening all over again.",
+            mainText: " At Serendipia, we do more than just photos and films — we create memories that last a lifetime. Our team of professional photographers and filmmakers is dedicated to capturing every real emotion from your big day, so you can relive your story again and again.Every detail matters, and we’re here to turn your special day into an unforgettable experience. Ready to take the first step? Book your date today and lock in your spot on our exclusive calendar.",
             beliveHeading: "WE BELIEVE IN THE MAGIC OF THE SPONTANEOUS",
             beliveLi:{
                 wedding: "Wedding Film",
@@ -19,7 +19,7 @@ export const base =
             lenguaje: "spanish",
             headingButton: "Descubre más",
             mainHeading: "¿Quiénes somos?",
-            mainText: "En Serendipia, nos dedicamos a capturar esos momentos únicos e irrepetibles que definen el amor y la conexión entre dos personas. Nuestro equipo está formado por fotógrafos y cineastas con años de experiencia, todos dedicados a crear imágenes y películas de primera categoría que realmente reflejen la belleza y la vibra de cada boda. Nuestra misión es simple: contar su historia de amor a través de la fotografía y el cine, creando recuerdos que los transporten directamente al corazón de su día especial, para que puedan revivir cada sentimiento como si estuviera sucediendo de nuevo.",
+            mainText: "En Serendipia, hacemos más que solo fotos y películas: creamos recuerdos que duran toda la vida. Nuestro equipo de fotógrafos y cineastas profesionales se dedica a capturar cada emoción real de tu gran día, para que puedas revivir tu historia una y otra vez. Cada detalle importa, y estamos aquí para convertir tu día especial en una experiencia inolvidable. ¿Listo para dar el primer paso? Reserva tu fecha hoy y asegura tu lugar en nuestro exclusivo calendario.",
             beliveHeading: "CREEMOS EN LA MAGIA DE LO ESPONTÁNEO",
             beliveLi:{
                 wedding: "Video del casamiento",

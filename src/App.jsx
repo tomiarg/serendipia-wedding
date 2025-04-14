@@ -40,10 +40,10 @@ function App() {
                     <div>
                       <button onClick={changeLenguage} className="btn-lenguage">{lenguage}</button>
                     </div>
-                    <div>
-                      <a href="#"><Instagram/></a>
-                      <a href="#"><TikTok/></a>
-                      <a href="#"><Whatsapp/></a>
+                    <div className="nav__socialMedia">
+                      <a href="https://www.instagram.com/serendipia.film?igsh=MWwyY2JmZjN2N3MycQ%3D%3D&utm_source=qr" target="_blank" className="nav__socialMedia-btn"><Instagram/></a>
+                      <a href="#" className="nav__socialMedia-btn"><TikTok/></a>
+                      <a href="#" className="nav__socialMedia-btn"><Whatsapp/></a>
                      </div>                 
                       
                     </nav>

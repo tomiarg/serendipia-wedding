@@ -86,6 +86,8 @@ header{
   background-color: #f5f2eb;
   border: 1px solid #9d9d9d;
 }
+
+
 .header__img{
   margin: 0 auto;
   width: 75rem;
@@ -112,7 +114,7 @@ header{
   text-decoration: none;
   display: flex;
   justify-content: center;
-
+  position: relative;  
 }
 
 [class$="__button"] a{
@@ -121,7 +123,15 @@ header{
   color: var(--blanco);
   border:solid 1px var(--blanco);
   border-radius: 25px;
+  transition: background-color 4s linear;
+  transition: color 2s linear;
+  transition: border 2s linear;
+}
 
+[class$="__button"] a:hover{
+  background-color: #b5b5b543;
+  color: #383838;
+  border: solid 1px #383838;
 }
 
 
@@ -417,3 +427,6 @@ video {
   width: 30rem;
   margin: 0 auto;
 }
+
+
+/*asdas*/
