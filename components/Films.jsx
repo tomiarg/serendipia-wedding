@@ -1,15 +1,16 @@
-import estrellas from "../src/assets/img/Estrellitas.jpeg"
-import boda from "../src/assets/video/boda.mp4"
+
+import boda from "../src/assets/video/serendipiaweb.mp4"
 export const Films = () => {
   return (
-    <section className="films">   
+    <section className="films">  
+     
         <div class="overlay">
+       
           <div class="films__links">
-          <div className="video__button"><a href="#">Madelein & Antonio</a></div>
-          <div className="video__button"><a href="#">Anna & Ricardo</a></div>
-          <div className="video__button"><a href="#">Gail & Justin</a></div>
-          <div className="video__button"><a href="#">Lidia & Joseph</a></div>
-          <div className="video__button"><a href="#">Kim & Gaby</a></div>
+          <h2>Films</h2> 
+          <div className="video__button"><a href="https://www.youtube.com/watch?v=LwFgJvU96G8" target="_blank">Sofia & David</a></div>
+          <div className="video__button"><a href="https://www.youtube.com/watch?v=TxYMcS3tnOE" target="_blank">Madeleine & Antonio</a></div>
+          <div className="video__button"><a href="https://www.youtube.com/watch?v=eE0-AIM83qI" target="_blank">Gail & Justin</a></div>
           </div>
           
         </div>

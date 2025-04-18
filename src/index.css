@@ -221,14 +221,13 @@ header{
 .films{
   width: 100%;
   position: relative;
-  display: flex
-;
+  display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh
 }
 .films .overlay {
-  padding: 4rem;
+  padding: 5rem;
   background: rgb(245, 242, 235);
   background: linear-gradient(270deg, rgba(245, 242, 235, 0.364), rgba(245, 242, 235, .1));
   display: flex;
@@ -239,14 +238,20 @@ header{
   width: 100%;
 }
 .films__links{
-    width: 100%;
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: start;
+    justify-content: space-around;
+}
+.video__button{
+  padding-left: 0;
+  padding-right: 0;
 }
 .video__button a{
-  min-width: 27.4rem;
+  min-width: 28rem;
+  border: 1px solid var(--negro);
+  color: var(--negro);
 }
 
 video {
@@ -257,8 +262,9 @@ video {
     object-fit: cover;
     overflow: hidden;
 }
+
 .photos{
-  padding: 4rem;
+  padding: 5rem;
   background-color: #f5f2eb;
 }
 
@@ -291,17 +297,36 @@ video {
 }
 .photos__grid--photo img{
   border-radius: 25px;
-  width: 100%;  
-  max-height: 100vh;
+  width: 30rem;  
+  height: 30rem;
+  object-fit: cover;
+  object-position: center;
   margin-bottom: 2rem
 }
 
 @media (min-width:768px) {
   .photos__grid--photo img{
-    object-fit: cover;
-    min-height: 100%;
     margin: 0;
   }
+  
+  .photos__grid--photo:first-child img{
+    width: 62rem;
+    height: 62rem;
+  }
+  .photos__grid--photo:nth-child(3) img{
+    height: 94rem;
+  }
+  .photos__grid--photo:nth-child(4) img{
+    width: 62rem;
+  }
+  .photos__grid--photo:nth-child(6) img{
+    object-position: right;
+  }
+  .photos__grid--photo:last-child img{
+    width: 94rem;
+    object-position: bottom;
+  }
+  
 }
 
 
