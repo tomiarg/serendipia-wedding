@@ -1,6 +1,12 @@
 
+
 import boda from "../src/assets/video/serendipiaweb.mp4"
 export const Films = () => {
+  
+  
+
+
+
   return (
     <section className="films">  
      

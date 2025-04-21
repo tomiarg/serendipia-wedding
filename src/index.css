@@ -126,6 +126,7 @@ header{
   transition: background-color 4s linear;
   transition: color 2s linear;
   transition: border 2s linear;
+  cursor: pointer;
 }
 
 [class$="__button"] a:hover{
@@ -165,6 +166,11 @@ header{
     padding: 2rem;
   }
 }
+.main__imgProfile{
+  width: 10rem;
+  margin: 0 auto;
+  border-radius: 50px;
+}
 
 .main__img{
     width: 15rem;
@@ -173,6 +179,27 @@ header{
     align-self: end;
     margin-right: -8rem;
     margin-bottom: -2rem;
+}
+.main__btn{
+  font-family: var(--fuentePrincipal);
+  text-decoration: none;
+  padding: 1rem 6rem;
+  color: var(--blanco);
+  border:solid 1px var(--blanco);
+  border-radius: 25px;
+  transition: background-color 4s linear;
+  transition: color 2s linear;
+  transition: border 2s linear;
+  cursor: pointer;
+  min-width: 28rem;
+  border: 1px solid var(--negro);
+  color: var(--negro);
+  
+}
+.main__btn:hover{
+    background-color: #b5b5b543;
+    color: #383838;
+    border: solid 1px #383838;
 }
 @media (min-width:768px) {
   .main__img{
