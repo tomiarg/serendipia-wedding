@@ -17,7 +17,7 @@ export const SectionBelive = ({beliveHead, beliveLi}) => {
             <div className="sectionBelive__text"><p>{shorts}</p></div> 
             <div className="sectionBelive__text"><p>{photos}</p></div>
             <div className="sectionBelive__text"><p>{resolution}</p></div>
-        </div>
+        </div>        
     </div>
     </>
   )

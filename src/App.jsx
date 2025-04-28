@@ -60,13 +60,18 @@ function App() {
                 </div>
               </div>
           </header>      
-      <Main mainHead={
+      <Main
+      mainHead={
        textos[0] && textos[0].mainHeading !== 'undefined' 
       ? textos[0].mainHeading 
-      : base[0].mainHeading} mainText ={textos[0] && textos[0].mainText !== 'undefined' 
+      : base[0].mainHeading}
+      mainText ={textos[0] && textos[0].mainText !== 'undefined' 
         ? textos[0].mainText
-        : base[0].mainText
-      } />
+        : base[0].mainText}
+      mainAbout={textos[0] && textos[0].mainAbout !== 'undefined' 
+        ? textos[0].mainAbout
+        : base[0].mainAbout}
+      />
       <SectionBelive beliveHead ={textos[0] && textos[0].beliveHeading !== 'undefined' 
         ? textos[0].beliveHeading
         : base[0].beliveHeading

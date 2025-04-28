@@ -12,6 +12,13 @@ export const Photos = () => {
     <section className="photos">
         <div className="photos__heading">
             <h1>Photos</h1>
+            <div className="photos__heading-grid">
+              <div className="photos__boda"><h3>Boda 1</h3></div>
+              <div className="photos__boda"><h3>Boda 2</h3></div>
+              <div className="photos__boda"><h3>Boda 3</h3></div>
+              <div className="photos__boda"><h3>Boda 4</h3></div>
+            </div>
+            
         </div>
         <div className="photos__grid">
           <div className="photos__grid--photo">

@@ -181,26 +181,45 @@ header{
     margin-bottom: -2rem;
 }
 .main__btn{
+  background-color: #f5f2eb;
   font-family: var(--fuentePrincipal);
+  font-size: 3rem;
   text-decoration: none;
-  padding: 1rem 6rem;
-  color: var(--blanco);
-  border:solid 1px var(--blanco);
-  border-radius: 25px;
-  transition: background-color 4s linear;
-  transition: color 2s linear;
-  transition: border 2s linear;
+  border:none;
+  border-radius: 25px;  
   cursor: pointer;
-  min-width: 28rem;
-  border: 1px solid var(--negro);
+  border: none;
   color: var(--negro);
-  
 }
-.main__btn:hover{
-    background-color: #b5b5b543;
-    color: #383838;
-    border: solid 1px #383838;
+
+
+.main__btn{
+  margin-top: 1.5rem;
+  animation: bounce 2s ease infinite;
 }
+.main__btn p{
+  margin: -4rem 0 0 0;
+}
+.main__btn p:last-of-type{
+  color: #9696962b;
+}
+.main__btn p:nth-child(2){
+  color: #7272726d;
+}
+
+@keyframes bounce {
+  0%, 25%, 55%, 75%, 100%{
+    transform: translateY(0);
+  }
+  45%{
+    transform: translateY(-20px);
+  }
+  -65%{
+    transform: translateY(-10px);
+  }
+}
+
+
 @media (min-width:768px) {
   .main__img{
     margin-bottom: -8rem;
@@ -227,6 +246,7 @@ header{
   background-size: cover;
   background-position: center;
   height: 40rem;
+  border-bottom-left-radius: 25px;
 }
 @media (min-width:768px) {
   .sectionBelive__image{
@@ -294,10 +314,73 @@ video {
   padding: 5rem;
   background-color: #f5f2eb;
 }
-
+.photos__heading{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+@media (min-width:768px) {
+  .photos__heading{
+    flex-direction: row;
+  }
+  
+}
+.photos__heading-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+@media (min-width:768px) {
+  .photos__heading-grid{
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 0;
+  }  
+}
+.photos__boda{
+  border-radius: 20px;
+}
+.photos__boda:hover{
+  position: relative;
+  background-color: #00000052;
+}
+.photos__boda h3{
+  margin: 0;
+  padding: 0 2rem;
+  color: var(--blanco);
+  border-radius: 25px;
+}
+.photos__boda:first-of-type{
+  background-image: url(../src/assets/img/padreHija.avif);
+  background-size: cover;
+  background-position: center;
+}
+.photos__boda:nth-of-type(2){
+  background-image: url(../src/assets/img/padreHija.avif);
+  background-size: cover;
+  background-position: center;
+}
+.photos__boda:nth-of-type(3){
+  background-image: url(../src/assets/img/padreHija.avif);
+  background-size: cover;
+  background-position: center;
+}
+.photos__boda:nth-of-type(4){
+  background-image: url(../src/assets/img/padreHija.avif);
+  background-size: cover;
+  background-position: center;
+}
+.photos__boda h3:hover{
+  background-color: #0000007c;
+  cursor: pointer;
+}
+.photos__grid{
+  display: grid;
+  justify-content: center;
+}
 @media (min-width:768px) {
   .photos__grid{
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
   }
@@ -478,6 +561,36 @@ video {
 .contact__image{
   width: 30rem;
   margin: 0 auto;
+}
+
+.form{
+  background-color: #f5f2eb ;
+  padding: 2rem;
+}
+.form__label {
+  font-family: var(--fuentePrincipal);
+  display: block;
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+.form__button{
+  font-family: var(--fuentePrincipal);
+  display: block;
+  margin: 0 auto;
+  border-radius: 25px;
+  font-weight: 400;
+  color: var(--negro);
+  cursor: pointer;
+  border: .1rem solid var(--negro);
+  transition: color 2s linear;
+  transition: border 2s linear;
+}
+
+.form__button:hover{
+  background-color: #b5b5b543;
+  color: #383838;
+  border: solid 1px #383838;
 }
 
 

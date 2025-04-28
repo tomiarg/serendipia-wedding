@@ -1,9 +1,22 @@
+
+import { useState } from "react"
 import logoSerendipia from "../src/assets/img/LogoSerendipiaNegro.png"
 import { Location, Mail } from "../src/svg"
 import { Phone } from "../src/svg/Phone"
+import { Form } from "./Form"
 
 
 export const Contact = () => {
+  const [book, setBook] = useState(false)
+  
+  const onBookClick = ()=>{
+    if(!book){
+      setBook(true)
+    }else{
+      setBook(false)     
+    }
+  }
+ 
   return (
     <div className="contact">
          <div className="overlay overlay--main">
@@ -19,12 +32,19 @@ export const Contact = () => {
         </div>
               <div>
                 <img src={logoSerendipia} alt="" className="contact__image" />
-                <div className="contact__button"><a href="#">Book Now</a></div>
+                <div ><button className="form__button"  onClick={onBookClick}>Book Now</button></div>
               </div>
             </div>
+            {
+                  book ? <Form/> : ""
+                }
+        
           </div>
+               
 
          </div>
+         
+         
       </div>
   )
 }
