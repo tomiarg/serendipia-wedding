@@ -10,9 +10,9 @@ export const Films = () => {
   return (
     <section className="films">  
      
-        <div class="overlay">
+        <div className="overlay">
        
-          <div class="films__links">
+          <div className="films__links">
           <h2>Films</h2> 
           <div className="video__button"><a href="https://www.youtube.com/watch?v=LwFgJvU96G8" target="_blank">Sofia & David</a></div>
           <div className="video__button"><a href="https://www.youtube.com/watch?v=TxYMcS3tnOE" target="_blank">Madeleine & Antonio</a></div>

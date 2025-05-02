@@ -1,8 +1,9 @@
 import { useState } from "react"
-import { Main,  SectionBelive, Films, Photos, Reviews, Contact } from "../components"
+import { Main,  SectionBelive, Photos, Reviews, Contact, Films } from "../components"
 import { base } from "./dataBase/base"
 import logo from "../src/assets/img/LogoSerendipiaWeddings.png"
 import {Instagram, TikTok, Whatsapp} from "../src/svg"
+
 
 function App() {
   const [spanish, setSpanish ] = useState(true)
@@ -30,7 +31,9 @@ function App() {
    
   }
 
+
   return (
+    
     <>
       <header>
            
@@ -79,7 +82,10 @@ function App() {
         ? textos[0].beliveLi
         : base[0].beliveLi
       }/>
-      <Films/>
+      
+        <Films/>
+      
+      
       <Photos/>
       <Reviews/>
       <Contact/>

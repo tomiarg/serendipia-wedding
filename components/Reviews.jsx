@@ -1,5 +1,5 @@
 import cupido from "../src/assets/img/Cupido.png"
-import puedes from "../src/assets/img/Puedebesar.jpeg"
+import puedes from "../src/assets/img/sofia&David/serendipia-42.webp"
 
 export const Reviews = () => {
   return (
