@@ -40,10 +40,13 @@ export const Contact = () => {
                 }
         
           </div>
-               
+          
+          <footer className="footer"><p>
+          Todos los derechos reservados. Web built by <a href="https://somosnene.com.ar/" target="_blank"> www.somosnene.com.ar </a>• Powered by React.
+          </p></footer> 
 
          </div>
-         
+
          
       </div>
   )

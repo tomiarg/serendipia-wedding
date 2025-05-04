@@ -44,7 +44,7 @@ header{
 }
 .header{
   height: 100vh;
-  background-image: url(../src/assets/img/Hero.jpeg);
+  background-image: url(../src/assets/img/Hero.webp);
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center;
@@ -142,7 +142,7 @@ header{
 
 .main{
   height: 200vh;
-  background-image: url(../src/assets/img/Vacio.jpeg);
+  background-image: url(../src/assets/img/serendipia-2.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -241,7 +241,7 @@ header{
   
 }
 .sectionBelive__image{
-  background-image: linear-gradient(180deg, rgba(245,242,235,1) 0%, rgba(245,242,235,0) 100%, rgba(245,242,235,0.007650594417454526) 100%), url("../src/assets/img/CaminandoAlMar.jpeg");
+  background-image: linear-gradient(180deg, rgba(245,242,235,1) 0%, rgba(245,242,235,0) 100%, rgba(245,242,235,0.007650594417454526) 100%), url("../src/assets/img/CaminandoAlMar.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -339,7 +339,7 @@ video {
   }  
 }
 
-.photo__button a{
+.photo__button button{
   font-size: 1rem;
   margin: 0;
   padding:1rem;
@@ -347,10 +347,10 @@ video {
   border-radius: 25px;
   border: 1px solid var(--negro);
 }
-.photo__button a:hover{
+.photo__button button:hover{
 
   background-color: #b5b5b543;
- cursor: pointer;
+  cursor: pointer;
 }
 
 
@@ -383,7 +383,22 @@ video {
   .photos__grid--photo:nth-child(8){
     grid-column: 2/5;
   }
+  .photos__grid--photo:nth-child(9){
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
   
+  .photos__grid--photo:nth-child(13){
+    grid-column: 3 / 5;
+  }  
+  .photos__grid--photo:nth-child(16){
+   
+    grid-row: 6 / 8;
+  }
+  .photos__grid--photo:nth-child(22){
+    grid-column: 2 / 4;
+    grid-row: 9 / 11;
+  }
 }
 .photos__grid--photo img{
   border-radius: 25px;
@@ -416,7 +431,22 @@ video {
     width: 94rem;
     object-position: bottom;
   }
-  
+  .photos__grid--photo:nth-child(9) img{
+    width: 62rem;
+  }
+ 
+  .photos__grid--photo:nth-child(13) img{
+    width: 62rem;
+  }
+  .photos__grid--photo:nth-child(16) img{
+    height: 62rem;
+    object-fit: cover;
+    object-position: center;
+  }
+  .photos__grid--photo:nth-child(22) img{
+    width: 62rem;
+    height: 62rem;
+  }
 }
 
 
@@ -483,7 +513,7 @@ video {
 
 .contact{
   height: 100vh;
-  background-image: url(../src/assets/img/Zapatos.jpeg);
+  background-image: url(../src/assets/img/Zapatos.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -573,5 +603,21 @@ video {
   border: solid 1px #383838;
 }
 
+.footer{
+  backdrop-filter: blur(3px);
+  grid-column: 2 / 5;
+  grid-row: 5 / 6;
+  text-align: center;
+}
+.footer p{
+  font-size: .9rem;
+  color: #f5f2eb;
+  margin: 0;
+}
+.footer a{
+  text-decoration: none;
+  color: #f5f2eb;
+  text-decoration: underline;
+}
 
 /*asdas*/

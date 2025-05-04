@@ -1,5 +1,6 @@
 
 
+import { LazyLoadComponent } from "react-lazy-load-image-component"
 import boda from "../src/assets/video/serendipiaweb.mp4"
 export const Films = () => {
   
