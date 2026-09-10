@@ -4,7 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 import estrellas from "../src/assets/img/sofia&nose/serendipia-41.webp"
 import gemelosAnillo from "../src/assets/img/sofia&nose/serendipia-17.webp"
 import miradaCerca from "../src/assets/img/sofia&nose/serendipia-18.webp"
-import noviaEspalda from "../src/assets/img/sofia&nose/serendipia-73.webp"
+import noviaEspalda from "../src/assets/img/sofia&nose/serendipia-24.webp"
 import padreHija from "../src/assets/img/sofia&nose/serendipia-35.webp"
 import paisajeHotel from "../src/assets/img/sofia&nose/serendipia-5.webp"
 import paraguas from "../src/assets/img/sofia&nose/serendipia-42.webp"

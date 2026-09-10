@@ -16,7 +16,7 @@ import gail15 from "../assets/img/gail&Justin/serendipia-22.webp"
 import gail16 from "../assets/img/gail&Justin/serendipia-27.webp"
 import gail17 from "../assets/img/gail&Justin/serendipia-28.webp"
 import gail18 from "../assets/img/gail&Justin/serendipia-29.webp"
-import gail19 from "../assets/img/gail&Justin/serendipia-20.webp"
+import gail19 from "../assets/img/gail&Justin/serendipia-30.webp"
 import gail20 from "../assets/img/gail&Justin/serendipia-31.webp"
 import gail21 from "../assets/img/gail&Justin/serendipia-32.webp"
 import gail22 from "../assets/img/gail&Justin/serendipia-37.webp"
@@ -52,29 +52,6 @@ import lidya44 from "../assets/img/lidya&Joseph/serendipia-44.webp"
 import lidya46 from "../assets/img/lidya&Joseph/serendipia-46.webp"
 import lidya47 from "../assets/img/lidya&Joseph/serendipia-47.webp"
 import lidya49 from "../assets/img/lidya&Joseph/serendipia-49.webp"
-import lidya50 from "../assets/img/lidya&Joseph/serendipia-50.webp"
-import lidya51 from "../assets/img/lidya&Joseph/serendipia-51.webp"
-import lidya52 from "../assets/img/lidya&Joseph/serendipia-52.webp"
-import lidya53 from "../assets/img/lidya&Joseph/serendipia-53.webp"
-import lidya54 from "../assets/img/lidya&Joseph/serendipia-54.webp"
-import lidya55 from "../assets/img/lidya&Joseph/serendipia-55.webp"
-import lidya56 from "../assets/img/lidya&Joseph/serendipia-56.webp"
-import lidya57 from "../assets/img/lidya&Joseph/serendipia-58.webp"
-import lidya58 from "../assets/img/lidya&Joseph/serendipia-59.webp"
-import lidya59 from "../assets/img/lidya&Joseph/serendipia-60.webp"
-import lidya60 from "../assets/img/lidya&Joseph/serendipia-61.webp"
-import lidya61 from "../assets/img/lidya&Joseph/serendipia-62.webp"
-import lidya62 from "../assets/img/lidya&Joseph/serendipia-63.webp"
-import lidya63 from "../assets/img/lidya&Joseph/serendipia-64.webp"
-import lidya64 from "../assets/img/lidya&Joseph/serendipia-65.webp"
-import lidya65 from "../assets/img/lidya&Joseph/serendipia-66.webp"
-import lidya66 from "../assets/img/lidya&Joseph/serendipia-67.webp"
-import lidya67 from "../assets/img/lidya&Joseph/serendipia-68.webp"
-import lidya68 from "../assets/img/lidya&Joseph/serendipia-69.webp"
-import lidya69 from "../assets/img/lidya&Joseph/serendipia-70.webp"
-import lidya70 from "../assets/img/lidya&Joseph/serendipia-71.webp"
-import lidya71 from "../assets/img/lidya&Joseph/serendipia-72.webp"
-import lidya72 from "../assets/img/lidya&Joseph/serendipia-76.webp"
 import mistin1 from "../assets/img/mistin&orin/serendipia-1.webp"
 import mistin2 from "../assets/img/mistin&orin/serendipia-2.webp"
 import mistin3 from "../assets/img/mistin&orin/serendipia-4.webp"
@@ -200,29 +177,7 @@ export const baseImg = [
                 lidya46,
                 lidya47,
                 lidya49,
-                // lidya50,
-                // lidya51,
-                // lidya52,
-                // lidya53,
-                // lidya54,
-                // lidya55,
-                // lidya56,
-                // lidya57,
-                // lidya58,
-                // lidya59,
-                // lidya60,
-                // lidya61,
-                // lidya62,
-                // lidya63,
-                // lidya64,
-                // lidya65,
-                // lidya66,
-                // lidya67,
-                // lidya68,
-                // lidya69,
-                // lidya70,
-                // lidya71,
-                // lidya72,
+                
         },       
     },
     {

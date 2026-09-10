@@ -3,6 +3,7 @@ import { Main,  SectionBelive, Photos, Reviews, Contact, Films } from "../compon
 import { base } from "./dataBase/base"
 import logo from "../src/assets/img/LogoSerendipiaWeddings.png"
 import {Instagram, TikTok, Whatsapp} from "../src/svg"
+import { CotizadorConAcceso } from "../components/CotizadorConAcceso"
 
 
 function App() {
@@ -45,8 +46,8 @@ function App() {
                     </div>
                     <div className="nav__socialMedia">
                       <a href="https://www.instagram.com/serendipia.film?igsh=MWwyY2JmZjN2N3MycQ%3D%3D&utm_source=qr" target="_blank" className="nav__socialMedia-btn"><Instagram/></a>
-                      <a href="#" className="nav__socialMedia-btn"><TikTok/></a>
-                      <a href="#" className="nav__socialMedia-btn"><Whatsapp/></a>
+                      <a href="https://www.tiktok.com/@serendipiafilm?lang=es" target="_blank" className="nav__socialMedia-btn"><TikTok/></a>
+                      <a href="https://wa.me/529842540242" target="_blank" className="nav__socialMedia-btn"><Whatsapp/></a>
                      </div>                 
                       
                     </nav>
@@ -54,7 +55,7 @@ function App() {
                   <p className="header__texto">Film & Photo</p>
                 
                   <div className="header__button">
-                    <a href="#">{
+                    <a href="#Belive">{
        textos[0] && textos[0].headingButton !== 'undefined' 
       ? textos[0].headingButton 
       : "Find out more"
@@ -87,7 +88,16 @@ function App() {
       
       
       <Photos/>
-      <Reviews/>
+      <Reviews
+      clientsReviews={textos[0] && textos[0].clientsReviews !== 'undefined' 
+        ? textos[0].clientsReviews
+        : base[0].clientsReviews
+      }
+      reviews={textos[0] && textos[0].reviews !== 'undefined' 
+        ? textos[0].reviews
+        : base[0].reviews
+      }/>
+      <CotizadorConAcceso/>
       <Contact/>
     </>
   )

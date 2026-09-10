@@ -7,7 +7,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  
+  scroll-behavior: smooth;  
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -110,7 +110,7 @@ header{
 }
 
 [class$="__button"]{
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -311,25 +311,27 @@ video {
 }
 
 .photos{
-  padding: 5rem;
+  padding: 2rem 5rem;
   background-color: #f5f2eb;
 }
 .photos__heading{
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap:0;
   align-items: center;
 }
 @media (min-width:768px) {
   .photos__heading{
     flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
   }
   
 }
 .photos__heading-grid{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
   margin-bottom: 3rem;
 }
 @media (min-width:768px) {
@@ -339,13 +341,25 @@ video {
   }  
 }
 
+
 .photo__button button{
   font-size: 1rem;
   margin: 0;
-  padding:1rem;
+  width: 30rem;
+  padding:2rem;
   color: var(--negro);
   border-radius: 25px;
   border: 1px solid var(--negro);
+  background-color: #b5b5b51d;
+}
+@media (min-width:768px) {
+  .photo__button{
+    padding: 0;
+  }
+  .photo__button button{
+    width: 10rem;
+    padding: 1rem;
+  }
 }
 .photo__button button:hover{
 
@@ -452,7 +466,7 @@ video {
 
 
 .reviews{
-  padding: 4rem;
+  padding: 0 4rem;
   background-color: #f5f2eb;
   display: flex;
   flex-direction: column;
@@ -462,7 +476,7 @@ video {
 @media (min-width:768px) {
   .reviews{
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: center;
   }
   
 }
@@ -488,11 +502,12 @@ video {
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-  padding: 4rem;
+  padding: 4rem 4rem 0 4rem;
 }
 @media(min-width:768px){
   .reviews__text{
     flex-direction: row;
+    width: 50rem;
   }
 }
 .reviews__text--img{
@@ -505,9 +520,11 @@ video {
   flex-direction: column;
 }
 .reviews__text--quote blockquote{
+  font-size: 1.2rem;
   margin: 0;
 }
 .reviews__text--quote p{
+  font-size: 1.2rem;
   font-weight: bolder;
 }
 
@@ -518,11 +535,12 @@ video {
   background-size: cover;
   background-position: center;
 }
-.contact h2{
+.contact h3{
   margin: 0;
 }
 
 .contact__form{
+  font-family: var(--fuentePrincipal);
   grid-column: 1 / 6;
   grid-row: 3 / 4;
   padding: 1rem;
@@ -563,10 +581,7 @@ video {
   text-decoration: none;
   color: var(--negro);
 }
-.contact__button a{
-  color: var(--negro);
-  border:solid 1px var(--negro);
-}
+
 
 .contact__image{
   width: 30rem;
@@ -595,6 +610,7 @@ video {
   border: .1rem solid var(--negro);
   transition: color 2s linear;
   transition: border 2s linear;
+  background-color: #b5b5b51b;
 }
 
 .form__button:hover{
@@ -621,3 +637,361 @@ video {
 }
 
 /*asdas*/
+
+/* ============================================================
+   Cotizador Serendipia — estética original (tal cual el documento
+   de referencia), escopeado bajo .cotizador-page para no chocar
+   con el CSS global del sitio ni heredar sus estilos.
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+.cotizador-page {
+  --cream: #f5f2eb;
+  --ink: #1A1814;
+  --muted: #7A7670;
+  --accent: #C8A87A;
+  --accent-dark: #A08450;
+  --rule: #E0DBD2;
+  --page: #FAFAF7;
+  --blue: #185FA5;
+  --blue-light: #E6F1FB;
+  --green: #0F6E56;
+  --green-light: #E1F5EE;
+
+  font-family: 'DM Sans', sans-serif;
+  color: var(--ink);
+  width: 100%;
+  background: var(--cream);
+  box-sizing: border-box;
+}
+.cotizador-page *,
+.cotizador-page *::before,
+.cotizador-page *::after {
+  box-sizing: border-box;
+}
+.cotizador-inner {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 4rem 3rem;
+}
+
+.cotizador-page .section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 1.25rem;
+  line-height: 1.2;
+}
+.cotizador-page .section-title em {
+  font-style: italic;
+  color: var(--accent-dark);
+}
+.cotizador-page .section-intro {
+  font-size: 14.5px;
+  line-height: 1.85;
+  color: var(--ink);
+  margin-bottom: 1.1rem;
+  font-weight: 300;
+}
+
+/* --- wrap principal --- */
+.cotizador-page .sim-wrap {
+  background: var(--cream);
+  border: 0.5px solid var(--rule);
+  padding: 2rem;
+  margin: 1.5rem 0;
+}
+.cotizador-page .sim-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 0.25rem;
+}
+.cotizador-page .sim-sub {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+.cotizador-page .sim-step {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent-dark);
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+.cotizador-page .sim-section {
+  margin-bottom: 1.5rem;
+}
+
+/* --- tabs tipo de servicio --- */
+.cotizador-page .tab-row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.cotizador-page .stab {
+  font-size: 12px;
+  padding: 5px 14px;
+  border: 0.5px solid var(--rule);
+  border-radius: 20px;
+  cursor: pointer;
+  background: var(--page);
+  color: var(--muted);
+  font-family: 'DM Sans', sans-serif;
+}
+.cotizador-page .stab.active {
+  background: var(--ink);
+  color: var(--page);
+  border-color: var(--ink);
+  font-weight: 500;
+}
+
+/* --- paquetes --- */
+.cotizador-page .pkg-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.cotizador-page .pkg-card {
+  background: var(--page);
+  border: 0.5px solid var(--rule);
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: border-color 0.15s;
+  text-align: left;
+  font-family: 'DM Sans', sans-serif;
+}
+.cotizador-page .pkg-card:hover {
+  border-color: var(--accent);
+}
+.cotizador-page .pkg-card.selected {
+  border: 1.5px solid var(--ink);
+}
+.cotizador-page .pkg-card-name {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+.cotizador-page .pkg-card-desc {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+.cotizador-page .pkg-card-price {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent-dark);
+}
+.cotizador-page .pkg-card-orig {
+  font-size: 10px;
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+/* --- fecha --- */
+.cotizador-page .date-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.cotizador-page .field-label {
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.cotizador-page select {
+  width: 100%;
+  font-size: 13px;
+  padding: 6px 8px;
+  border: 0.5px solid var(--rule);
+  background: var(--page);
+  font-family: 'DM Sans', sans-serif;
+  color: var(--ink);
+}
+.cotizador-page .season-tag {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+/* --- add-ons --- */
+.cotizador-page .addon-checks {
+  display: flex;
+  flex-direction: column;
+}
+.cotizador-page .check-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 0.5px solid var(--rule);
+}
+.cotizador-page .check-row:last-child {
+  border-bottom: none;
+}
+.cotizador-page .chk {
+  width: 17px;
+  height: 17px;
+  border: 0.5px solid var(--rule);
+  border-radius: 3px;
+  cursor: pointer;
+  flex-shrink: 0;
+  background: var(--page);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.cotizador-page .chk.on {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+.cotizador-page .chk.on::after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 8px;
+  border: 1.5px solid var(--page);
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+.cotizador-page .chk-label {
+  flex: 1;
+  font-size: 13px;
+}
+.cotizador-page .chk-sub {
+  font-size: 11px;
+  color: var(--muted);
+}
+.cotizador-page .chk-price {
+  font-size: 12px;
+  color: var(--muted);
+  min-width: 55px;
+  text-align: right;
+}
+
+/* --- resumen --- */
+.cotizador-page .summary-box {
+  background: var(--ink);
+  color: var(--page);
+  padding: 1.25rem 1.5rem;
+  margin-top: 1.5rem;
+}
+.cotizador-page .sum-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  padding: 4px 0;
+}
+.cotizador-page .sum-muted {
+  color: rgba(255, 255, 255, 0.5);
+}
+.cotizador-page .sum-val {
+  color: rgba(255, 255, 255, 0.85);
+}
+.cotizador-page .sum-total {
+  font-size: 22px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  padding-top: 10px;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.cotizador-page .sum-total-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'DM Sans', sans-serif;
+}
+.cotizador-page .pill {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-left: 4px;
+}
+.cotizador-page .p-up { background: var(--blue-light); color: var(--blue); }
+.cotizador-page .p-down { background: var(--green-light); color: var(--green); }
+.cotizador-page .p-neu { background: var(--cream); color: var(--muted); }
+
+/* --- gate de acceso (mismo lenguaje visual que el resto) --- */
+.cotizador-page .gate-wrap {
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--cream);
+  border: 0.5px solid var(--rule);
+  padding: 2.5rem 2rem;
+}
+.cotizador-page .gate-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+.cotizador-page .gate-sub {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+.cotizador-page .gate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.cotizador-page .gate-input {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  padding: 10px 12px;
+  border: 0.5px solid var(--rule);
+  background: var(--page);
+  color: var(--ink);
+  text-align: center;
+}
+.cotizador-page .gate-error {
+  color: #B23B3B;
+  font-size: 12px;
+}
+.cotizador-page .gate-submit {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px;
+  border: none;
+  background: var(--ink);
+  color: var(--page);
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.cotizador-page .gate-submit:hover {
+  opacity: 0.85;
+}
+.cotizador-page .gate-exit {
+  display: block;
+  margin: 1.25rem auto 0;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  color: var(--muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.cotizador-page .gate-exit:hover {
+  color: var(--ink);
+}
+
+@media (max-width: 640px) {
+  .cotizador-page { padding: 2.5rem 1.25rem; }
+  .cotizador-inner { padding: 2.5rem 1.25rem; }
+  .cotizador-page .pkg-grid { grid-template-columns: 1fr; }
+  .cotizador-page .date-row { grid-template-columns: 1fr; }
+}

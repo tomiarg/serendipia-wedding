@@ -42,11 +42,7 @@ export const Photos = () => {
                 <LazyLoadImage
                  key={index}
                  src={photoUrl}
-                 alt={`Wedding photo ${index + 1}`}  effect="opacity"
-                 wrapperProps={{
-                  style: {transitionDelay: "1s"},
-                }}
-                
+                 alt={`Wedding photo ${index + 1}`}                  
                 />
             </div>
             
